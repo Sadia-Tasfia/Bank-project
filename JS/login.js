@@ -9,7 +9,7 @@ document.getElementById("submit-btn").addEventListener('click',function(){
   // step-3:get the password
   const passwordField = document.getElementById("password");
   const password = passwordField.value;
-  console.log(password);
+  // console.log(password);
 
   // Danger: Do'not verify email pass on the client side to apply this process(don't use this process ever)
   // step-4: Verify email and password
@@ -18,7 +18,7 @@ document.getElementById("submit-btn").addEventListener('click',function(){
       email === "string" ||
       email === "number") &&
       password !== "function" &&
-      password !== "object" &&
+      password !== "object" ||
       password === "string" && 
       password === "number"
   ) {
