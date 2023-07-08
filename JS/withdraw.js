@@ -10,7 +10,9 @@ document.getElementById("btn-withdraw").addEventListener('click',function(){
   const previousWithdrawTotalString = withdrawTotalElement.innerText;
   const previousWithdrawTotal = parseFloat(previousWithdrawTotalString);
 
-  withdrawTotalElement.innerText = newWithdrawAmount;
+  // withdrawTotalElement.innerText = newWithdrawAmount;
+
+  
   // step:4- calculate total withdraw
   const currentWithdrawTotal = previousWithdrawTotal + newWithdrawAmount;
   withdrawTotalElement.innerText = currentWithdrawTotal;
